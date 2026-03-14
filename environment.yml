@@ -1,3 +1,6 @@
+name:
+  - isce2
+
 channels:
   - conda-forge
 

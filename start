@@ -1,0 +1,10 @@
+#!/bin/bash
+
+set -e
+
+# Set ISCE2 variables on image build
+export ISCE_HOME=/srv/conda/envs/isce2/lib/python3.11/site-packages/isce
+export PATH=$ISCE_HOME/bin:$ISCE_HOME/applications:$PATH
+export PYTHONPATH=$ISCE_HOME:$PYTHONPATH
+
+exec "$@"
